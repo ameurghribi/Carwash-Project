@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo/Logo Final.png">
+    <title>lavage</title>
+</head>
+<body>
+    <!-- ===================================================================== start project ===================================================================== -->
+
+
+    <!-- ======================================================= header ======================================================= -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#acceuil"><img src="img/logo/Logo Final.png" alt="carwash"></a>
+            </div>
+            <div class="navbar">
+                <nav id="navigation" class="navigation">
+                    <ul class="nav-list-parent">
+                        <li class="nav-list-child"><a href="#acceuil">acceuil</a></li>
+                        <li class="nav-list-child"><a href="#propos">à propos de nous</a></li>
+                        <li class="nav-list-child"><a href="#services">services</a></li>
+                        <li class="nav-list-child"><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================= home ======================================================= -->
+    <section id="acceuil" class="home">
+        <div class="nap-home">
+            <div class="container">
+                <div class="content-home">
+                    <h1><span>Bienvenue chez</span> carwash</h1>
+                    <h2>Une voiture propre <br> est une voiture heureuse</h2>
+                    <p>Retrouver votre voiture comme neuve avec la vapeur qui permet d’éliminer les tâches sur le textile ou le cuir, rafraichir le tableau de bord, faire briller les jantes et dégraisser le bloc moteur sans aucun risque pour les parties électroniques.</p>
+                    <a href="#" class="about-link">À propos de nous</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= about ======================================================= -->
+    <section class="about" id="propos">
+        <div class="container">
+            <div class="big-parent">
+                <h2>À propos de nous</h2>
+                <div class="about-content">
+                    <h3>NETTOYAGE ET RÉNOVATION AUTO <br>À DOMICILE</h3>
+                    <p>Carwash vous garantit un travail de qualité irréprochable et la remise en état d'origine de vos meubles et vos voitures grâce à nos appareils de nettoyage multifonctions mobiles et nos techniciens spécialisés, qualifiés et formés aux différentes nouvelles techniques et procédés de nettoyage.</p>
+                    <p>Carwash est là pour votre bien : Le nettoyage à la vapeur est un technique 100% verte qui utilise des produits de nettoyage écologiques afin de vous garantir un environnement hygiénique et propre sans aucun risque.</p>
+                </div>
+                <a href="#" class="btn-about">voire plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= services ======================================================= -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="big-parent">
+                <h2>Services</h2>
+                <div class="services-content">
+                    <div class="services-box">
+                        <div class="icon-serv"></div>
+                        <div class="box-content">
+                            <h3><img src="img/icon/self-service.png" alt="">SELF-SERVE CAR WASH</h3>
+                            <p>JetWash : Comme nulle autre, la technologie de lavage HP WASH & GO comble les souhaits de ses clients exigeants en matière de qualité du lavage</p>
+                        </div>
+                    </div>
+                    <div class="services-box">
+                        <div class="icon-serv"></div>
+                        <div class="box-content">
+                            <h3><img src="img/icon/best-seller.png" alt="">QUALITY PRODUCTS</h3>
+                            <p>PLUSIEURS TECHNOLOGIES DISPONIBLE</p>
+                            <p>-Brosses Softecs </p>
+                            <p>-MultiFlex WheelJet</p>
+                            <p>-InsecTecs </p>
+                        </div>
+                    </div>
+                    <div class="services-box">
+                        <div class="icon-serv"></div>
+                        <div class="box-content">
+                            <h3><img src="img/icon/earth.png" alt="">FRIENDLY ENVIRONMENTALLY</h3>
+                            <p>MISSION ECOLOGIQUE:</p>
+                            <p>-Centre de lavage alimenté par l’énergie solaire.</p>
+                            <p>-Equipements économes en énergie (eau & électricité) .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <img src="img/before&after/bd5522b8-f9a9-49eb-8d77-5d69494cd793-CarDetailing_022522_04_MW.webp" alt="" class="gallery1">
+                <img src="img/before&after/c54b0abd-2fe0-4ddf-81d7-0e19466ed98f.webp" alt="" class="gallery2">
+                <img src="img/before&after/car-wash-before-after.jpg" alt="" class="gallery3">
+                <img src="img/before&after/maxresdefault (1).jpg" alt="" class="gallery4">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================================= contact ======================================================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="big-parent">
+                <h2>Contact</h2>
+                <div class="content-contact">
+                    <div class="social-media">
+                      <h2>Conatcter Nous</h2>
+                      <p>Je suis disponible 24/7</p>
+                    </div>
+                    <div class="contact-form">
+                      <h2>E-mail</h2>
+                      <form  onsubmit="sendEmail(); reset(); return false"> <!--action="mail.php" method="post"-->
+                        <input type="text" name="name" id="name" placeholder="Nom" required><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                        <input type="text" name="subject" id="subject" placeholder="Sujet"><br>
+                        <textarea name="message" id="message"  placeholder="Message" required></textarea><br>
+                        <input type="submit" value="Envoyer L'e-mail" id="send">
+                      </form>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>    
+    </section>
+
+    <!-- ======================================================= footer ======================================================= -->
+
+    <footer>
+        <div class="container">
+            <div class="propos-footer">
+                <h2>Carwash</h2>
+                <p>Une voiture propre est une voiture heureuse</p>
+                <p>appeler nous: +216 52 000 000</p>
+            </div>
+            <div class="link-footer">
+                <h2>Lien</h2>
+                <nav class="navigation-footer">
+                    <ul class="footer-nav-list-parent">
+                        <li class="footer-nav-list-child"><a href="#acceuil">acceuil</a></li>
+                        <li class="footer-nav-list-child"><a href="#propos">à propos de nous</a></li>
+                        <li class="footer-nav-list-child"><a href="#services">services</a></li>
+                        <li class="footer-nav-list-child"><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">
+                <h2>Copyright</h2>
+                <p>copyright 2023</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- ===================================================================== end project ===================================================================== -->
+
+</body>
+</html>

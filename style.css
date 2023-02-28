@@ -1,0 +1,472 @@
+/* ====================================================================================== start project ====================================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================== font =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+
+/* =========================================== root =========================================== */
+:root{
+    --font: 'Montserrat', sans-serif;
+    --second-font: 'Itim', cursive;
+    --default-white: #fff;
+    --white: #F5F5F5;
+    --white-gray: #E9E8E8;
+    --black: #18181b;
+    --blue: #3C79F5;
+    --nap-blue: #3c7af569;;
+    --logo-color: #C780FA;
+    --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+
+/* =========================================== general =========================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.container{
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 10px;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* =========================================== header =========================================== */
+header{
+    height: 80px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--blue);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.logo{
+    height: 200px;
+    width: 120px;
+    background-color: var(--logo-color);
+    position: relative;
+    border-radius: 0 0 20px 20px;
+}
+.logo img{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+}
+.nav-list-parent{
+    display: flex;
+    list-style: none;
+}
+.nav-list-child a{
+    text-transform: capitalize;
+    margin: 0 15px;
+    color: var(--default-white);
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+.nav-list-child a:hover, .nav-list-child a:active{
+    color: var(--black);
+}
+.bars{
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.bar{
+    height: 2px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: var(--white);
+    margin: 5px 0;
+}
+
+/* =========================================== home =========================================== */
+.home{
+    min-height: calc(100vh - 80px);
+    background: url('img/lavage-img/cw-hero.jpg') no-repeat center center;
+}
+.nap-home{
+    min-height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: var(--nap-blue);
+}
+.home .container{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5rem 10px;
+}
+.home h1{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--logo-color);
+    text-transform: uppercase;
+    font-family: var(--second-font);
+}
+.home h1 span{
+    color: var(--default-white);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.home h2{
+    font-size: 5rem;
+    color: var(--default-white);
+}
+.home p{
+    color: var(--white-gray);
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+.home .about-link{
+    display: block;
+    width: max-content;
+    margin-top: 25px;
+    color: var(--black);
+    font-weight: 500;
+    background-color: var(--white);
+    padding: 15px 32px;
+    border-radius: 100px;
+    transition: border-radius 0.7s;
+}
+.home .about-link:hover{
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+/* =========================================== about =========================================== */
+.about{
+    min-height: 73vh;
+    background: url(img/lavage-img/Untitled.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 60%;
+    background-size: 33% 110%;
+}
+.about .container{
+    padding: 120px 20px;
+}
+.big-parent h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--logo-color);
+    padding: 2.8rem 0;
+}
+.about-content h3{
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: var(--blue);
+    padding: 1rem 0;
+}
+.about-content p{
+    max-width: 780px;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+.btn-about{
+    display: block;
+    width: max-content;
+    text-transform: capitalize;
+    margin-top: 1.2rem;
+    padding: 23px 60px;
+    background-color: var(--blue);
+    color: var(--default-white);
+    border-radius: 0;
+    transition: border-radius 0.7s;
+}
+.btn-about:hover{
+    border-radius: 30px;
+}
+
+
+
+/* =========================================== services =========================================== */
+.services{
+    min-height: 100vh;
+}
+.services .container{
+    padding: 120px 15px;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 330px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+.services-box{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    max-width: 330px;
+    transition: transform 0.7s;
+}
+.services-box:hover{
+    transform: translateY(-20px);
+}
+.box-content img{
+    width: 40px;
+    margin-right: 10px;
+}
+.box-content{
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+.box-content h3{
+    color: var(--logo-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.box-content p{
+    font-size: 0.9rem;
+    line-height: 2;
+}
+.gallery{
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.gallery img{
+    width: 500px;
+    height: 300px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+.gallery1{
+    border-radius: 22px 0 0 0;
+}
+.gallery2{
+    border-radius: 0 22px 0 0;
+}
+.gallery3{
+    border-radius: 0 0 0 22px;   
+}
+.gallery4{
+    border-radius: 0 0 22px 0;
+}
+
+
+
+/* =========================================== contact =========================================== */
+.contact .container{
+    padding: 40px 15px;
+}
+.contact{
+    padding: 5rem 2rem;
+}
+.content-contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.social-media , .contact-form{
+    flex: 50%;
+}
+.social-media p{
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.social-media ul{
+    margin-top: 1.8rem;
+    display: flex;
+}
+.social-media ul .fa-brands , .social-media ul .fa-solid{
+    line-height: 2;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFF8E1;
+    margin-right: 1.6rem;
+}
+form{
+    text-align: center;
+}
+input{
+    height: 45px;
+}
+input, textarea{
+    font-size: 1rem;
+    width: 459px;
+    margin: 0.7rem 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d5d5d5;
+    padding: 4px 10px;
+}
+input:focus, textarea:focus{
+    border-bottom: 2px solid #555;
+}
+textarea{
+    height: 15rem;
+}
+#send{
+    border: none;
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#send:focus{
+    border: none;
+}
+.social-media{
+    padding: 2.5rem 3.5rem;
+    background-color: var(--blue);
+}
+.contact-form{
+    background-color: var(--white-gray);
+    padding: 2.5rem 3.5rem;
+    border-radius: 0 22px 22px 0;
+}
+.social-media h2{
+    color: #FFF8E1;
+    border-bottom: 2px solid #FFF8E1;
+}
+.contact-form h2{
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+.contact-form h2, .social-media h2{
+    font-size: 2.3rem;
+    padding: 0.7rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/* =========================================== footer =========================================== */
+footer{
+    background-color: var(--blue);
+}
+footer .container{
+    padding: 40px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--default-white);
+}
+footer p{
+    color: var(--white);
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    margin: 5px 0;
+}
+footer li a{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+
+
+/* =========================================== media query =========================================== */
+@media only screen and (max-width: 830px){
+    .logo img{
+        /* margin-left: 40px; */
+        width: 90px;
+    }
+}
+@media only screen and (max-width: 692px){
+    .navigation{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .about{
+        background: none;
+    }
+}
+@media screen and (max-width: 653px){
+    .contact-form, .social-media{
+        padding: 2.5rem 2rem;
+    }
+    input, textarea{
+        width: 100%;
+    }
+    .contact{
+        padding: 2rem 10px;
+    }
+    .social-media ul .fa-brands , .social-media ul .fa-solid{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 996px){
+    .content-contact{
+        flex-direction: column;
+    }
+    .contact-form{
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================================== end project ====================================================================================== */
